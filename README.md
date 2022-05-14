@@ -1,3 +1,3 @@
 # waterGit
-Лендинг доставки воды
+Лендинг сайта доставки воды
 https://mikempire.github.io/waterGit/
