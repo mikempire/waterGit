@@ -260,6 +260,11 @@ p, h1, h2, h3, h4 {
   -ms-flex-align: center;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .header__logo {
+    margin-right: 5px;
+  }
+}
 @media (max-width: 1024px) {
   .header__nav {
     display: none;
@@ -445,7 +450,7 @@ p, h1, h2, h3, h4 {
 /* stylelint-disable */
 /* stylelint-disable */
 .hero {
-  background-image: url("../img/hero__bg.png");
+  background-image: url("../../img/hero__bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1473,6 +1478,48 @@ input[type=number]::-webkit-outer-spin-button {
   transform: translate(-50%, -50%);
 }
 
+.arrow__up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 7%;
+  right: 4%;
+  cursor: pointer;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.arrow__up svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-imperialRed);
+}
+.arrow__up:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
 .overlay {
   position: fixed;
   z-index: 101;
@@ -1499,6 +1546,11 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 6px;
   padding: 50px 50px 60px;
   cursor: auto;
+}
+@media (max-width: 576px) {
+  .popup {
+    padding: 50px 20px;
+  }
 }
 .popup__wrapper {
   position: fixed;
@@ -1579,7 +1631,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 56px;
   right: 0;
   top: 0;
-  background: url("../img/close.png") no-repeat 20px 20px;
+  background: url("../../img/close.png") no-repeat 20px 20px;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
